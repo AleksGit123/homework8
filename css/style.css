@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    margin: 150px auto;
+    margin: auto;
     /* border: 2px solid red; */
     padding: 5px;
     transition: all 1s;
@@ -100,14 +100,14 @@
     align-items: center;
     /* border: 2px solid red; */
     width: 400px;
-    margin: auto;
+    margin: 150px auto;
 }
 
 .task3-h2 {
     font-size: 140px;
     color: red;
     letter-spacing: 20px;
-    animation: text 0.5s infinite;
+    animation: text 0.5s linear infinite;
 }
 
 @keyframes text {
@@ -130,4 +130,55 @@
     100% {
         opacity: 1;
     }
+}
+
+/* task4 */
+.task4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 20px solid red;
+    border-bottom: 20px solid green;
+    border-left: 20px solid yellow;
+    border-right: 20px solid green;
+    border-radius: 50%;
+    width: 60%;
+    height: 80%;
+    animation: spinner 0.8s linear infinite;
+    animation-play-state: running;
+
+}
+
+.spinner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0 deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+.task4-h2 {
+    transform: rotate(0deg);
+    font-size: 30px;
+    color: green;
+    font-weight: 800;
+    text-shadow: 0 2px 3px black;
+    position: absolute;
 }
