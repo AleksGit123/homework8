@@ -182,3 +182,40 @@
     text-shadow: 0 2px 3px black;
     position: absolute;
 }
+
+/* task 5 */
+
+.task5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 400px;
+    /* border: 3px solid red; */
+}
+
+.task5-header {
+    /* display: flex; */
+    width: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+li {
+    font-size: 30px;
+    transition: 1s linear;
+}
+
+li:hover {
+    text-shadow: 0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00,
+        0 0 20px #00ff00,
+        0 0 25px #00ff00,
+        0 0 30px #00ff00;
+
+}
