@@ -1,0 +1,34 @@
+/* task1 */
+
+.task1 {
+    width: 400px;
+    height: 300px;
+    background-color: #dda0dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+
+}
+
+.task1-button {
+    color: white;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: #dda0dd;
+    box-shadow: 5px 5px 6px 0 black, inset 3px 3px 3px 0 #FFFFFF;
+    text-shadow: 3px 3px 5px black;
+
+
+
+}
+
+.task1-button:active {
+    box-shadow: inset 3px 3px 3px 0 #000000, inset -1px -1px 3px #FFFFFF;
+    text-shadow: 0 0 3px black;
+
+}
